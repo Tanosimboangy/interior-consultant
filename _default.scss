@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 12px;
+  background: #181719;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+}
+body ul li {
+  list-style: none;
+}
+body p {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+}
+
+@media (min-width: 920px) {
+  body main {
+    padding-top: 170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main header {
+    padding-top: 0;
+  }
+}
+
+
+@media (min-width: 720px) {
+  body {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+}
+
+@media (min-width: 1114px) {
+  body {
+    margin-left: 77px;
+    margin-right: 77px;
+  }
+}
