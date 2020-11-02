@@ -7,6 +7,8 @@ body {
     padding: 0; }
     body ul li {
       list-style: none; }
+  body p {
+    margin: 0; }
 
 @font-face {
   font-family: "Montserrat";
@@ -21,7 +23,7 @@ body {
   src: local(Montserrat), url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff"); }
 
 @font-face {
-  font-family: "Lora";
+  font-family: "Lora_bold";
   src: local(Lora), url(../fonts/Lora-Bold.woff2) format("woff2"), url(../fonts/Lora-Bold.woff) format("woff"); }
 
 @font-face {
@@ -126,19 +128,37 @@ body header {
   .first_section .first_section--article {
     max-width: 300px;
     background: #181719;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 50px; }
     .first_section .first_section--article h3 {
       display: none; }
     .first_section .first_section--article .first_section--article_list {
       background-color: black;
       display: flex;
-      flex-direction: row;
-      justify-content: baseline; }
-      .first_section .first_section--article .first_section--article_list .first_section--article_list--profil img {
-        border-radius: 50%;
-        max-width: 54px;
+      flex-direction: column;
+      color: white; }
+      .first_section .first_section--article .first_section--article_list li:first-of-type ul {
+        display: flex;
+        flex-direction: row; }
+        .first_section .first_section--article .first_section--article_list li:first-of-type ul .first_section--article_list--profil img {
+          border-radius: 50%;
+          max-width: 54px;
+          padding-top: 10px;
+          padding-left: 10px; }
+        .first_section .first_section--article .first_section--article_list li:first-of-type ul .first_section--article_list--id {
+          display: flex;
+          flex-direction: column; }
+      .first_section .first_section--article .first_section--article_list li:last-of-type {
+        font-family: "Lora_bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        padding-bottom: 25px;
+        padding-left: 19px;
         padding-top: 10px;
-        padding-left: 10px; }
+        max-width: 210px; }
 
 .footer p {
   font-family: "Montserrat_bold";
@@ -148,4 +168,8 @@ body header {
   line-height: 17px;
   color: #A9A9A9;
   text-align: center;
-  padding-bottom: 24px; }
+  padding-bottom: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-top: 1px solid #A9A9A9;
+  padding-top: 10px; }
