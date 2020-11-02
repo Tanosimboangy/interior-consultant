@@ -3,11 +3,9 @@
 .first_section {
     position: relative; 
     .first_section--image {
-        max-width: 100%;
+        max-width: 550px;
     }
     .first_section--article {
-        background: #181719;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         h3 {
             display: none;
         }
@@ -20,6 +18,8 @@
           position: relative;
           margin-right: 10px;
           margin-left: auto;
+          background: #181719;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           li:first-of-type ul {
             display: flex;
             flex-direction: row;
@@ -68,4 +68,15 @@
           }
         }
     }
+}
+
+@media(min-width:720px) {
+  header {
+    padding-top: 0;
+    .first_section {
+      .first_section--image {
+          max-width: 750px;
+      }
+    }
+  }
 }

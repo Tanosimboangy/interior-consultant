@@ -37,3 +37,22 @@
         align-items: center;
     }
 }
+@media(min-width: 720px) {
+  .masthead_container {
+    display: block;
+    .masthead_subheading {
+      font-size: 48px;
+      line-height: 61px;
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+    .masthead_paragraph {
+      max-width: 355px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      padding-bottom: 48px;
+    }
+  }
+    
+}

@@ -9,6 +9,7 @@ body header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 12px;
   h2 {
     margin: 0;
     font-family: "CrimsonPro";
@@ -48,8 +49,6 @@ body header {
         text-align: center;
         padding-bottom: 32px;
         a {
-          color: white;
-          text-decoration: none;
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 500;
@@ -68,5 +67,31 @@ body header {
 }
 
 @media(min-width: 720px) {
-
-}
+  body header {
+    svg {
+      display: none;
+    }
+    nav.container {
+      position: initial;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        li {
+          a {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+          }
+        }
+        li:not(:last-of-type) {
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+} 
