@@ -1,6 +1,5 @@
 @import "variable";
 
-
 body header {
   display: flex;
   flex-direction: row;
@@ -60,8 +59,9 @@ body header {
     position: absolute;
     top: 0;
     right: -100%;
-    // .navigation_container {
-
-    // }
   }
+}
+
+@media(min-width: 720px) {
+
 }

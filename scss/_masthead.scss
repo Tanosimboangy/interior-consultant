@@ -23,13 +23,16 @@
         padding-bottom: 25px;
     }
     .masthead_info {
-        font-family: "Montserrat_thin";
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 200;
-        font-size: 14px;
-        line-height: 16px;
-        color: #FFFFFF;
         padding-bottom: 26px;
+        font-family: "Montserrat_bold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }

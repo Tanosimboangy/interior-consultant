@@ -107,14 +107,17 @@ body header {
     max-width: 410px;
     padding-bottom: 25px; }
   .masthead_container .masthead_info {
-    font-family: "Montserrat_thin";
-    text-decoration: none;
+    padding-bottom: 26px;
+    font-family: "Montserrat_bold";
     font-style: normal;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 17px;
     color: #FFFFFF;
-    padding-bottom: 26px; }
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
 
 .first_section {
   position: relative; }
@@ -136,3 +139,13 @@ body header {
         max-width: 54px;
         padding-top: 10px;
         padding-left: 10px; }
+
+.footer p {
+  font-family: "Montserrat_bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #A9A9A9;
+  text-align: center;
+  padding-bottom: 24px; }
